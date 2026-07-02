@@ -96,7 +96,7 @@ Where they win
 - Ubiquitous — every volunteer already knows it
 - Unlimited flexibility for ad-hoc analysis
 - No vendor lock-in, portable data
-- Fine for pre-launch ministries with <12 gifts/month
+- Fine for pre-launch ministries with fewer than 12 gifts/month
 
 Why switch
 
