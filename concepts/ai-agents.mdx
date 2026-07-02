@@ -1,0 +1,95 @@
+---
+title: "How Altarflow's AI Agents Automate Your Bookkeeping"
+sidebarTitle: "AI Agents"
+description: "Altarflow's AI agents categorize expenses, match Zelle donations, scan receipts, and learn from corrections — so bookkeeping takes minutes, not days."
+---
+
+Altarflow's AI agents are not a chatbot you ask questions. They are background workers that run continuously on your transaction data — categorizing expenses, matching Zelle and Venmo donations to donor profiles, scanning receipts, and building the records that used to live in a spreadsheet or a volunteer's memory. You review what they've done, correct anything they got wrong, and approve. They remember every correction and get more accurate week over week.
+
+## What the agents do
+
+### Expense categorization
+
+Every time a transaction hits your connected bank feed or credit card, the categorization agent creates an expense record with a suggested fund and category. It evaluates the vendor name, transaction amount, and your church's correction history to make the best possible assignment.
+
+For a church just getting started, the agent might be right about 80% of transactions on day one. After a few weeks of corrections, most churches see accuracy above 95% — and the remaining 5% are edge cases that take seconds to fix.
+
+### Zelle and Venmo donation matching
+
+This is the capability that sets Altarflow apart from every other church platform. When a Zelle or Venmo transfer hits your bank account, the matching agent:
+
+1. Detects that the transaction is a payment-app donation (not a vendor payment)
+2. Creates a donation record with the amount, date, and source
+3. Searches your donor profiles for a name, phone number, or giving pattern match
+4. Assigns the donation to the matched donor and their most recent or most common fund
+
+If the agent can't make a confident match, the transaction lands in the **Manual Review** tab with the raw transaction data so you can assign it yourself. That correction is stored — next time the same donor sends via Zelle, the agent matches them automatically.
+
+### OCR receipt scanning
+
+Forward any email receipt to your church's unique Altarflow inbox address, or take a photo of a paper receipt in the mobile app. The OCR agent reads the vendor, amount, date, and line items, creates an expense record, and routes it to the categorization agent. The paper shoebox and the digital receipt pile both go to zero.
+
+### The review-and-approve workflow
+
+Every action the agents take surfaces in the **Agents → Review Queue**. This queue is your daily (or weekly) checkpoint:
+
+<Steps>
+  <Step title="Review agent work">
+    Open the queue to see every transaction the agents processed since your last session. Each item shows the vendor or donor name, amount, suggested fund, suggested category, and the agent's confidence level.
+  </Step>
+  <Step title="Correct anything wrong">
+    Click any item to reassign the fund, change the category, update the donor match, or add a note. There is no penalty for correcting agents — every correction is a teaching moment.
+  </Step>
+  <Step title="Approve in one click">
+    When the queue looks right, click **Approve All**. All agent-processed transactions are confirmed and immediately reflected in your reports, fund balances, and donor profiles.
+  </Step>
+</Steps>
+
+<Tip>
+  You don't need to review the queue daily. Many churches check in once a week, spend 15–20 minutes reviewing, and approve everything in one session. The agents keep working in the background regardless of how often you review.
+</Tip>
+
+## How the agents get smarter over time
+
+The agents use a self-learning model tied to your specific church's data. There are no global training sessions, no prompts to write, and no settings to configure. The learning happens through use:
+
+- **Rename a donor** — the agent applies that match to future transactions from the same source
+- **Change a category** — the agent applies that category to the same vendor automatically going forward
+- **Reassign a fund** — the agent remembers that this type of transaction belongs to this fund for your church
+
+The compounding effect is significant. In the first month, the review queue might take 30–45 minutes. By month three, most churches are down to under 20 minutes. By month six, many review sessions are a quick scan and a single click.
+
+<Accordion title="What if the agent keeps getting something wrong?">
+  Correct it again. The agent weights your most recent corrections more heavily than older ones, so persistent corrections override earlier patterns quickly. If a particular vendor or donor type keeps mis-categorizing, you can also set a manual rule in **Settings → Agent Rules** to lock that assignment.
+</Accordion>
+
+<Accordion title="Can I turn off a specific agent?">
+  Yes. Each agent — categorization, Zelle/Venmo matching, OCR — can be enabled or disabled individually from **Settings → Agents**. Disabling an agent stops it from creating new suggestions but doesn't affect records already approved.
+</Accordion>
+
+## What the Scale plan adds
+
+On the Growth plan, agents work reactively — they process what comes in and surface it for your review. The Scale plan adds proactive and autonomous capabilities:
+
+<CardGroup cols={2}>
+  <Card title="AI Budgeting Agent" icon="chart-line">
+    Analyzes your historical income and expense patterns and generates a suggested annual budget by fund and category. Flags when spending in any category is trending over budget before the month ends.
+  </Card>
+  <Card title="Custom AI Sub-Agents" icon="sliders">
+    Build agents that watch specific conditions — a fund balance dropping below a threshold, a category exceeding its budget, or a donor who hasn't given in 90 days — and notify you or take action when triggered.
+  </Card>
+  <Card title="WhatsApp Notifications & Chat" icon="message">
+    Receive agent alerts and summaries via WhatsApp. Ask questions in natural language ("What's the Building Fund balance?") and get live answers without opening the app.
+  </Card>
+  <Card title="MCP Integrations" icon="plug">
+    Connect agents to external tools — email, calendar, communication platforms — so they can take action beyond the Altarflow platform.
+  </Card>
+</CardGroup>
+
+## The agents and your oversight
+
+Agents never approve their own work. Every transaction they process goes through your review queue before it is finalized. You can correct, reject, or override any agent action at any time. This design means the agents handle the volume while you maintain the accuracy and accountability your church requires.
+
+<Warning>
+  Agents work on your bank-connected transaction data. They do not have access to your banking credentials, cannot initiate transfers, and cannot move money. The bank connection is read-only.
+</Warning>

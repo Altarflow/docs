@@ -1,0 +1,64 @@
+---
+title: "Data Security and Privacy at Altarflow"
+sidebarTitle: "Security"
+description: "How Altarflow protects your church's data — encrypted storage, secure bank connections, Stripe payment processing, and full data portability you control."
+---
+
+Your church's financial records and member information are sensitive. Altarflow is built with the understanding that churches need to trust their financial platform with real money, real donor relationships, and real people's data. This page explains how Altarflow protects that data and what controls you have as an administrator.
+
+## How Altarflow protects your church's financial data
+
+Altarflow implements security measures aligned with what you would expect from a financial platform:
+
+**Encryption in transit and at rest.** All data moving between your browser and Altarflow's servers is encrypted using industry-standard TLS. Data stored in Altarflow's database is encrypted at rest, meaning it is unreadable to anyone without the appropriate decryption keys — including unauthorized insiders.
+
+**Access controls.** Every Altarflow account uses role-based access, so team members only see the data their role requires. Your lead administrator controls who has access to what. Account authentication is managed through a dedicated, hardened authentication service — credentials are not stored in Altarflow's own database.
+
+**Regular security assessments.** Altarflow conducts ongoing reviews of its security posture and infrastructure to identify and address vulnerabilities before they become problems.
+
+## Secure bank connections
+
+When you connect your church's bank account or credit card to Altarflow, the connection is handled securely:
+
+- Bank connections use read-only access where available — Altarflow can see your transactions for categorization and reconciliation purposes but cannot initiate transfers from your account
+- Altarflow does not store your banking credentials; the connection is maintained through a secure token that can be revoked at any time from your dashboard
+- If you disconnect a bank account, Altarflow's access is terminated immediately
+
+## How Altarflow handles payment processing
+
+All payment processing for digital donations — Apple Pay, Google Pay, credit cards, and ACH bank transfers — is handled by **Stripe**, one of the most trusted payment infrastructure providers in the world. This means:
+
+- **Altarflow never stores credit card numbers.** Card data goes directly to Stripe, which is certified at the highest level of PCI compliance. Altarflow receives only a tokenized reference to the payment, not the raw card details.
+- **Payout deposits** from digital giving go directly from Stripe to your church's connected bank account on a daily basis. Altarflow does not hold or pool donor funds.
+- **Processing fees** (4% on digital donations) are deducted by Stripe at the time of processing, so your net payout reflects the exact amount your church receives.
+
+## How donation and member data is stored
+
+Donation records and member profiles are stored in Altarflow's secure cloud database. The data is:
+
+- **Logically separated by church** — your church's data is not accessible to other Altarflow customers
+- **Backed up regularly** — automated backups ensure your records are recoverable in the event of a technical failure
+- **Retained while your account is active** — if you close your account, your data is retained for 120 days to allow for export, and then deleted
+
+Altarflow does not sell, rent, or share your church's member data or donor information with third parties for marketing or any other commercial purpose.
+
+## Data export and portability
+
+You own your data. Altarflow gives you full access to export your records at any time:
+
+- **Donation records** — export as CSV from the Reports section, filtered by date range or donor
+- **Member profiles** — export your full member list and associated data as CSV
+- **Financial reports** — export as PDF or CSV from any report view
+
+There is no fee to export your data and no restriction on how often you can do it. If you decide to leave Altarflow, you take a complete copy of your church's records with you. The export tools are available from your dashboard without needing to contact support.
+
+## Who to contact with security questions
+
+If you have a security concern, discover a potential vulnerability, or have questions about how your church's data is handled, contact the Altarflow team at:
+
+**Email:** [support@altarflow.com](mailto:support@altarflow.com)  
+**Subject line:** Security Inquiry
+
+For privacy-specific questions — including requests to access, correct, or delete personal information under applicable law — use the same email address with "Privacy Policy Inquiry" in the subject line.
+
+Altarflow is operated by AU Sigma LLC, based in San Francisco, CA. The full Privacy Policy is available at [altarflow.com/privacy](https://altarflow.com/privacy).

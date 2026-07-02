@@ -1,0 +1,3 @@
+# Source: https://altarflow.com/blog?category=stories
+
+[![Midjourney/Altarflow Illustration](https://altarflow.com/_next/image?url=%2Fblog%2Ffrom-chaos-to-their-own-building-how-one-church-transformed-their-future%2Fhero.webp&w=2048&q=75&dpl=dpl_8QGd1WxoTddt6mDii2g8LtAuWaFb)\\ \\ StoriesNov 21, 2025\\ \\ **From Chaos to Their Own Building: How One Church Transformed Their Future**\\ \\ Managing your church shouldn't be a burden. A real story of an organization that transforms chaotic spreadsheets into a new way to do church, making their dream a possible reality.](https://altarflow.com/blog/from-chaos-to-their-own-building-how-one-church-transformed-their-future)

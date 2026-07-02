@@ -1,0 +1,65 @@
+---
+title: "Auto-Match Zelle and Venmo Donations to Donors"
+sidebarTitle: "Zelle & Venmo"
+description: "Altarflow's AI detects Zelle, Venmo, and Cash App transfers from your bank feed and automatically matches each one to the right donor and fund."
+---
+
+Plenty of your congregation gives through Zelle, Venmo, and Cash App — and until now, those gifts lived in your personal banking app, completely disconnected from your donation records. You had to manually look up each transfer, figure out who sent it, decide which fund it belongs to, and type it into a spreadsheet or giving system by hand. Altarflow eliminates that entirely. Connect your bank once, and the AI handles the rest — automatically detecting transfers, creating donation records, and matching every gift to the right donor and fund. No other church platform does this.
+
+<Note>
+Zelle, Venmo, and Cash App auto-matching requires a bank connection and is available on the **Growth** and **Scale** plans. The Seed plan supports manual donation entry for these payment types.
+</Note>
+
+## How the Bank Connection Works
+
+When you connect your church's bank account to Altarflow, the system continuously monitors your transaction feed for incoming transfers.
+
+<Steps>
+  <Step title="Connect your bank account">
+    Link your church's bank account from the Altarflow dashboard using your bank credentials. The connection is read-only — Altarflow can see your transactions but cannot move money. The link is secured through bank-grade encryption.
+  </Step>
+  <Step title="Altarflow detects incoming transfers">
+    As transactions post to your account, Altarflow identifies Zelle, Venmo, and Cash App transfers by their transaction metadata — the sender name, memo, and transfer type all come through the bank feed.
+  </Step>
+  <Step title="AI creates a donation record">
+    For each detected transfer, the AI agent automatically creates a donation record in your Altarflow donations table — including the amount, date, payment method, and the sender's name as it appears on the transfer.
+  </Step>
+  <Step title="AI matches the donation to a donor and fund">
+    The agent cross-references the sender name against your donor CRM. When it finds a match, it links the donation to that donor's profile and assigns it to their most-used fund or the fund indicated in the transfer memo. The record is ready to approve with a single click.
+  </Step>
+</Steps>
+
+## Unknown Senders
+
+Not every Zelle or Venmo transfer will come from someone already in your CRM. When the AI cannot confidently match a transfer to an existing donor, it flags the record for manual review.
+
+<CardGroup cols={2}>
+  <Card title="Flagged for Review" icon="flag">
+    Unmatched transfers appear in a dedicated **Manual Review** tab in your donations view. The amount, date, and sender name are all pre-filled — you just need to assign the donor.
+  </Card>
+  <Card title="Create a New Donor" icon="user-plus">
+    If the sender is a first-time giver, you can create a new donor profile directly from the review tab. The donation is linked to the new profile and included in their giving history going forward.
+  </Card>
+</CardGroup>
+
+## The AI Learns from Every Correction
+
+Every time you correct or confirm a match, Altarflow's AI agent records your decision. The next time a transfer arrives from the same sender, it's matched automatically — no review needed.
+
+<Accordion title="How corrections improve matching accuracy">
+  - **Rename a donor match:** If the AI matched "R. Johnson" to the wrong Robert Johnson in your CRM, correct it once. The agent remembers the correct pairing forever.
+  - **Assign a fund:** If you reassign a gift from General Fund to Building Fund based on a memo, the agent learns to route future gifts from that sender to Building Fund by default.
+  - **Confirm a new donor:** Once you confirm a new donor for an unknown sender, future transfers from that person are matched instantly without review.
+
+  Your accuracy compounds every week — the more you use it, the less you touch it.
+</Accordion>
+
+## Why This Is Unique
+
+No other church management platform automatically matches Zelle and Venmo donations from a bank feed. Most platforms only handle giving that flows through their own payment processor — if a donor sends money through their bank app directly, that gift simply doesn't exist in the system.
+
+Altarflow is the first platform to close this gap. For many churches, Zelle transfers account for 20–40% of total giving. With automatic matching, all of that giving is tracked, attributed to the right donors, counted toward campaign totals, and included in year-end tax statements — without any manual work on your part.
+
+<Warning>
+Bank connections use a read-only link. Altarflow never initiates transfers, moves funds, or stores your full banking credentials. Your financial data is protected with bank-grade encryption at rest and in transit.
+</Warning>

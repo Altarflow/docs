@@ -1,0 +1,120 @@
+---
+title: "Scan and Forward Receipts for Automatic Expense Entry"
+sidebarTitle: "Receipt Scanning"
+description: "Snap a photo or forward an email receipt to your unique inbox — OCR reads the details and creates the expense record automatically."
+---
+
+Chasing paper receipts and retyping amounts into a spreadsheet is one of the most thankless jobs in church administration. Altarflow eliminates it with two capture methods that require no data entry: OCR receipt scanning from your phone camera and email forwarding to your organization's unique Altarflow inbox. Both methods extract the same structured data and create a ready-to-approve expense record in seconds.
+
+## Scanning a receipt with OCR
+
+Optical character recognition (OCR) lets Altarflow read a receipt the same way a human would — but faster and without errors.
+
+<Steps>
+  <Step title="Open the expense capture screen">
+    In the Altarflow app or web interface, navigate to **Expenses** and tap or click **Add Expense**. Choose **Scan Receipt** from the capture options.
+  </Step>
+  <Step title="Take the photo">
+    Point your device camera at the receipt — printed paper, a screen showing a digital receipt, or a PDF open on another device all work. Hold the camera steady so the text is in focus, then capture the image.
+  </Step>
+  <Step title="OCR reads the receipt">
+    Altarflow's OCR engine processes the image and extracts four core fields:
+    - **Vendor** — the merchant or payee name
+    - **Amount** — the total charged
+    - **Date** — the transaction date from the receipt
+    - **Category** — the suggested expense category based on vendor type and AI analysis
+  </Step>
+  <Step title="Review and approve the record">
+    The extracted data populates a new expense record that appears in your review queue. Confirm the details, assign a fund if not already suggested, and approve. The receipt image is attached to the record as a supporting document.
+  </Step>
+</Steps>
+
+## What OCR reads from a receipt
+
+Altarflow extracts structured data from the receipt image, including:
+
+- **Vendor name** — used for categorization and learning
+- **Total amount** — the expense value recorded
+- **Transaction date** — stamped on the expense record
+- **Line items** — when visible, line-item detail is stored for reference
+- **Category suggestion** — derived from vendor type and prior categorization preferences
+
+The attached image is stored alongside the expense record so you always have the original document for audit or compliance purposes.
+
+## Supported receipt formats
+
+<Accordion title="Printed paper receipts">
+  Standard register receipts, hand-written receipts, and printed invoices. Ensure the text is in focus and the image is well-lit. Crumpled or torn receipts scan best when flattened first.
+</Accordion>
+
+<Accordion title="Digital receipts on a screen">
+  Take a photo of a receipt displayed on a phone, tablet, or computer screen. Reduce glare by turning off flash and angling the camera slightly.
+</Accordion>
+
+<Accordion title="PDF and image files">
+  Upload a receipt PDF or image file (JPEG, PNG, WEBP) directly from your device. Altarflow runs the same OCR process on uploaded files as it does on camera captures.
+</Accordion>
+
+<Accordion title="Email receipts (forwarding method)">
+  See the [Email Forwarding](#email-forwarding) section below. Forwarding is often faster than scanning for digital invoices that arrive by email.
+</Accordion>
+
+## Email forwarding \{#email-forwarding\}
+
+Every Altarflow organization receives a unique email address — something like `expenses@yourchurch.altarflow.com`. Forwarding any receipt or invoice to that address creates an expense record automatically, without opening the app.
+
+<Tip>
+  When a vendor sends you an invoice by email, forward it directly to your Altarflow inbox before you pay it. The AI creates the expense record, attaches the original email as the document, and routes it to your review queue. You never need to screenshot, download, or re-upload anything.
+</Tip>
+
+The email forwarding workflow works like this:
+
+<Steps>
+  <Step title="Find your unique inbox address">
+    Go to **Settings → Expense Capture** in Altarflow to see your organization's unique @altarflow.com email address. Save it as a contact on your phone or add it to your email app for quick access.
+  </Step>
+  <Step title="Forward the receipt or invoice email">
+    When you receive an invoice, utility bill, or order confirmation by email, forward it to your Altarflow inbox address. You can also BCC the address when placing orders so the receipt is captured the moment it arrives.
+  </Step>
+  <Step title="AI reads and categorizes the email">
+    Altarflow parses the email body and any attachments. It extracts the vendor, amount, date, and line items, then categorizes the expense using the same AI engine as OCR scanning. The original email is stored as the supporting document.
+  </Step>
+  <Step title="Approve from your review queue">
+    The new expense record appears in the **Agent Suggestions** queue with the extracted details pre-filled. Review, adjust if needed, assign a fund, and approve.
+  </Step>
+</Steps>
+
+## When OCR confidence is low
+
+OCR accuracy depends on image quality, receipt formatting, and how clearly the text is printed. When Altarflow's confidence in the extracted data falls below its threshold, it does not silently create an incorrect record.
+
+<Warning>
+  Low-confidence expense records are routed to the **Manual Review** tab instead of the Agent Suggestions queue. You will see a banner on the record indicating which fields could not be read reliably. Fill in the missing details, correct anything that was misread, and approve. Each correction improves accuracy for similar receipts in the future.
+</Warning>
+
+Common causes of low confidence include:
+
+- **Blurry or dark images** — retake the photo in better lighting
+- **Unusual receipt layouts** — handwritten receipts or non-standard formats
+- **Faded thermal paper** — older receipts where ink has faded
+- **Partial images** — part of the receipt cut off by the camera frame
+
+If a receipt consistently fails to scan correctly, use the email forwarding method or enter the expense manually. The image will still be attached to the record for documentation.
+
+## Frequently asked questions
+
+<Accordion title="Can multiple people in my organization scan receipts?">
+  Yes. Any admin or staff member with access to Altarflow can use the OCR scanning and email forwarding features. All captured expenses route to the same review queue. You can see who submitted each expense in the record detail.
+</Accordion>
+
+<Accordion title="Is the receipt image stored securely?">
+  Yes. Receipt images and email attachments are stored encrypted and linked to the expense record. They are accessible only to authenticated users in your organization and are available for export with the record.
+</Accordion>
+
+<Accordion title="What if two people scan the same receipt?">
+  Altarflow does not automatically deduplicate captured receipts. If the same receipt is scanned twice, two expense records will appear in your review queue. Review before approving to avoid duplicate expenses — the submission timestamp on each record helps identify duplicates.
+</Accordion>
+
+<Accordion title="Do I need a mobile app to scan receipts?">
+  You can scan receipts using the camera on the Altarflow mobile app for the best experience. You can also upload receipt images or PDFs from the web interface. Email forwarding works from any email client, including on desktop.
+</Accordion>

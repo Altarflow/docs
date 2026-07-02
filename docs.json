@@ -1,72 +1,90 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
+  "name": "Altarflow",
+  "theme": "almond",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://media.brand.dev/28a94fd3-9c16-4a7c-b623-cff640d53d9c.png",
+    "dark": "https://media.brand.dev/eb63af71-aa2f-4991-9025-0fc30a816e08.png"
+  },
+  "favicon": "https://media.brand.dev/bba627ab-8928-40c5-9513-834aa55f29c0.png",
+  "colors": {
+    "primary": "#040404",
+    "light": "#3c83f4",
+    "dark": "#ffffff"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Book a Demo",
+      "href": "https://altarflow.com/contact"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans-and-pricing"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/funds-and-categories",
+              "concepts/ai-agents",
+              "concepts/donor-profiles"
+            ]
+          },
+          {
+            "group": "Donations",
+            "pages": [
+              "donations/overview",
+              "donations/digital-giving",
+              "donations/zelle-venmo-matching",
+              "donations/campaigns",
+              "donations/tax-statements"
+            ]
+          },
+          {
+            "group": "Expenses",
+            "pages": [
+              "expenses/overview",
+              "expenses/receipt-scanning",
+              "expenses/bank-connection",
+              "expenses/fund-allocation"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "reports/overview",
+              "reports/financial-analysis",
+              "reports/exporting"
+            ]
+          },
+          {
+            "group": "People & Engagement",
+            "pages": [
+              "people/crm",
+              "people/forms",
+              "people/web-portal"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "migration",
+              "security"
+            ]
+          }
+        ]
+      }
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

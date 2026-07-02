@@ -1,0 +1,118 @@
+---
+title: "Connect Your Bank for Automatic Transaction Import"
+sidebarTitle: "Bank Connection"
+description: "Link your bank accounts and credit cards so Altarflow imports every transaction automatically and AI categorizes each one for you."
+---
+
+Connecting your bank account or credit card is the fastest way to eliminate manual expense entry. Once linked, Altarflow retrieves every transaction, creates the expense records, and has AI agents categorize them — all before you open the app. What used to mean hours of statement reconciliation becomes a quick approval session that takes minutes.
+
+<Note>
+  Bank and credit card connection is available on the **Growth** and **Scale** plans. If you are on the Seed plan, you can still capture expenses using [OCR receipt scanning](/expenses/receipt-scanning) and email forwarding. [Upgrade your plan](/plans-and-pricing) to unlock the bank connection feature.
+</Note>
+
+## Linking a bank account or credit card
+
+<Steps>
+  <Step title="Open the Bank Connection screen">
+    In Altarflow, go to **Settings → Bank Connections** and click **Add Account**. You can connect both bank checking accounts and business credit cards from the same screen.
+  </Step>
+  <Step title="Search for your institution">
+    Type your bank or credit card provider's name. Altarflow connects to thousands of financial institutions via a secure bank-linking service. Select your institution from the results.
+  </Step>
+  <Step title="Authenticate with your bank">
+    Enter your online banking credentials in the secure bank-linking flow. Altarflow uses read-only access — it can retrieve transactions but cannot initiate transfers or modify your account. Your credentials are never stored by Altarflow.
+  </Step>
+  <Step title="Select the accounts to sync">
+    After authentication, choose which accounts to connect. You can link multiple checking accounts, savings accounts, and credit cards in a single setup session.
+  </Step>
+  <Step title="Initial transaction import">
+    Altarflow imports recent transactions immediately after connection. Ongoing transactions are retrieved automatically — typically within one business day of posting. You do not need to trigger a manual sync.
+  </Step>
+</Steps>
+
+## How transaction records are created
+
+Each transaction Altarflow retrieves from your bank feed becomes an expense record with the following fields pre-populated:
+
+- **Payee** — the merchant or payee name from the bank description
+- **Amount** — the transaction amount
+- **Date** — the date the transaction posted
+- **Account** — the bank account or credit card the transaction came from
+- **Category** — AI-suggested expense category (see below)
+- **Fund** — AI-suggested fund allocation based on category and prior preferences
+
+These records appear in your **Agent Suggestions** review queue, ready for one-click approval.
+
+## AI categorization from the bank feed
+
+When a transaction arrives from your bank feed, an AI agent analyzes the payee name and transaction description and assigns the most likely expense category. Common categories include Utilities, Maintenance, Office Supplies, Missions, Staff Expense, and any custom categories your church has configured.
+
+The categorization draws on:
+
+- **Payee recognition** — known vendor names are categorized immediately
+- **Description patterns** — keywords in the bank description guide the suggestion
+- **Your correction history** — preferences you have set for prior transactions from the same payee
+
+## Correct once, automated forever
+
+The bank connection's most valuable feature is the learning loop. The first time an unfamiliar vendor appears, the AI makes its best guess. If that guess is wrong, you correct it in the expense record and save.
+
+<Steps>
+  <Step title="AI makes a categorization suggestion">
+    A transaction from Home Depot arrives. The AI suggests **Maintenance → Building Fund** based on the vendor name.
+  </Step>
+  <Step title="You correct it once">
+    Your church's Home Depot purchases actually belong to **Missions** because you are furnishing a mission site. You update the category and fund and approve.
+  </Step>
+  <Step title="The agent learns your preference">
+    Altarflow stores your correction as a preference tied to that payee. Future Home Depot transactions are automatically categorized as **Missions** without any prompt from you.
+  </Step>
+  <Step title="Automation compounds over time">
+    As you use Altarflow over weeks and months, more and more vendors have learned preferences. Your approval sessions get shorter. Most transactions reach the Agent Suggestions queue already correctly categorized.
+  </Step>
+</Steps>
+
+## Handling a miscategorized transaction
+
+Even a well-trained AI will occasionally get something wrong. When you find a miscategorized transaction:
+
+1. Open the expense record from either the Agent Suggestions queue or the approved expense list.
+2. Click **Edit** and update the **Category** and/or **Fund** fields.
+3. Save the record. If the expense was already approved, the correction updates the fund balance and report data immediately.
+4. Altarflow records your correction as a new preference for that payee. Similar future transactions will reflect your updated preference.
+
+<Tip>
+  If a single vendor is used for multiple expense types — for example, Amazon for both office supplies and maintenance items — you can override the category on individual transactions without changing the default preference for that vendor. Use the **This transaction only** option when saving your correction.
+</Tip>
+
+## Connecting multiple accounts
+
+You can connect as many bank accounts and credit cards as your church uses. Each account appears as a separate source in Altarflow, and transactions are labeled with the originating account. This makes it easy to:
+
+- Track spending across a primary checking account and a petty cash account separately
+- Monitor a dedicated credit card used for ministry travel and events
+- Review all accounts together in a unified expense feed or filter by account when needed
+
+To add another account, return to **Settings → Bank Connections** and click **Add Account** again. There is no limit on the number of connected accounts.
+
+## Frequently asked questions
+
+<Accordion title="Is my banking data secure?">
+  Altarflow uses a bank-grade, read-only connection to retrieve transactions. Your login credentials are never stored by Altarflow — they pass through a certified bank-linking service that handles authentication. Altarflow can only read transaction data; it cannot move money or make changes to your accounts.
+</Accordion>
+
+<Accordion title="How often does Altarflow sync new transactions?">
+  Altarflow retrieves new transactions automatically, typically within one business day of a transaction posting to your account. You do not need to trigger manual refreshes. If you need to pull in a transaction sooner, you can trigger a manual sync from **Settings → Bank Connections**.
+</Accordion>
+
+<Accordion title="What if my bank is not supported?">
+  Altarflow connects to thousands of financial institutions. If your bank does not appear in the search, contact support — institutions are added regularly. In the meantime, you can continue capturing expenses via OCR receipt scanning and email forwarding.
+</Accordion>
+
+<Accordion title="Can I disconnect a bank account?">
+  Yes. Go to **Settings → Bank Connections**, find the account, and click **Disconnect**. Existing expense records created from that account are retained. New transactions from that account will no longer be imported.
+</Accordion>
+
+<Accordion title="Does bank connection work for credit cards used by staff?">
+  Yes. If your church has a business credit card that staff use for ministry expenses, connect it the same way you would a bank account. Each charge appears as an expense record in Altarflow for review and approval.
+</Accordion>

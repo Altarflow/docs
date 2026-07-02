@@ -1,0 +1,105 @@
+{
+  "projectType": "saas",
+  "projectName": "Altarflow",
+  "projectDescription": "Altarflow is the financial operating system for churches — tracking donations, expenses, and reports with AI agents that automate the back-office work of reconciliation, categorization, and Zelle matching.",
+  "theme": "almond",
+  "primaryColor": "#040404",
+  "lightColor": "#3c83f4",
+  "darkColor": "#ffffff",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans-and-pricing"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/funds-and-categories",
+              "concepts/ai-agents",
+              "concepts/donor-profiles"
+            ]
+          },
+          {
+            "group": "Donations",
+            "pages": [
+              "donations/overview",
+              "donations/digital-giving",
+              "donations/zelle-venmo-matching",
+              "donations/campaigns",
+              "donations/tax-statements"
+            ]
+          },
+          {
+            "group": "Expenses",
+            "pages": [
+              "expenses/overview",
+              "expenses/receipt-scanning",
+              "expenses/bank-connection",
+              "expenses/fund-allocation"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "reports/overview",
+              "reports/financial-analysis",
+              "reports/exporting"
+            ]
+          },
+          {
+            "group": "People & Engagement",
+            "pages": [
+              "people/crm",
+              "people/forms",
+              "people/web-portal"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "migration",
+              "security"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI agents that automatically categorize expenses and match Zelle/Venmo donations to donors",
+    "Digital giving with Quick Give (Apple Pay, Google Pay, tap-to-give) and daily payouts",
+    "All-source donation tracking (digital, cash, Zelle, checks) in one dashboard",
+    "NFC tap tags for in-person giving — scan to open giving page from pews or welcome desk",
+    "Donor portal at donor.altarflow.com for giving history and year-end tax statements",
+    "Member CRM with auto-building profiles, custom fields, and family groupings",
+    "Drag-and-drop bilingual form builder (English and Spanish) with CRM auto-sync",
+    "Branded church web portal with engagement analytics — no website required",
+    "Fund accounting with real-time fund balances and restricted-dollar tracking",
+    "Board-ready financial reports exportable as PDF or CSV in seconds",
+    "Free 5-year data migration from ChurchTrac, Breeze, Tithely, QuickBooks",
+    "Native bilingual support in English and Spanish across every feature"
+  ],
+  "publicApiSurface": [
+    "Donor portal — donor.altarflow.com",
+    "Quick Give digital giving flow",
+    "NFC tap tag programming dashboard",
+    "Bank & credit card connection (Plaid-style sync)",
+    "Email receipt inbox (unique per-organization address)",
+    "OCR receipt scanning",
+    "Form builder with embed and share options",
+    "Web portal (branded church landing page)",
+    "Report export (PDF / CSV)",
+    "AI agents: transaction categorization, Zelle matching, budgeting (Scale plan)",
+    "WhatsApp notifications and AI chat (Scale plan)",
+    "MCP integrations (Scale plan)"
+  ]
+}

@@ -1,0 +1,124 @@
+---
+title: "Assign Expenses to Funds for Accurate Fund Accounting"
+sidebarTitle: "Fund Allocation"
+description: "Tag every expense to the right fund — General, Building, Missions, and more — for real-time balances and accurate per-fund reports."
+---
+
+Fund accounting is the backbone of church financial management. Donors give to specific purposes, grants come with spending restrictions, and building campaigns need their own ledger. Altarflow's fund allocation feature ensures every expense is tagged to the fund that paid for it — so your books reflect reality, your board can see fund balances at a glance, and restricted funds are never accidentally overspent.
+
+<Note>
+  Fund accounting is available on the **Growth** and **Scale** plans. Manual expense entry with basic category tracking is available on all plans, including Seed. [See plan details](/plans-and-pricing) to compare what is included.
+</Note>
+
+## What fund allocation means
+
+In Altarflow, every expense belongs to exactly one fund. A fund represents a designated pool of money — it could be a standing operational fund like General Fund, a campaign like Building Fund, a ministry-specific bucket like Youth Ministry or Missions, or a restricted grant with specific spending rules.
+
+When you assign an expense to a fund, Altarflow:
+
+- Subtracts the expense amount from that fund's current balance
+- Records the expense under that fund for reporting purposes
+- Tracks cumulative spending against any budget you have set for the fund
+
+This gives you real-time fund balances that are always accurate — not balances from last month's spreadsheet.
+
+## Assigning a fund when entering an expense manually
+
+When you add an expense by hand, fund assignment is part of the entry form.
+
+<Steps>
+  <Step title="Open the Add Expense form">
+    Go to **Expenses** and click or tap **Add Expense**. Choose **Manual Entry** if you are not scanning a receipt or using a bank transaction.
+  </Step>
+  <Step title="Fill in the expense details">
+    Enter the vendor name, amount, date, and select the expense category. These fields work the same regardless of which fund you assign.
+  </Step>
+  <Step title="Select the fund">
+    In the **Fund** field, choose from your list of active funds. If you need a fund that does not exist yet, go to **Settings → Funds** to create one before returning to the expense form.
+  </Step>
+  <Step title="Add a note if needed">
+    Use the optional **Notes** field to add context — especially useful for restricted grants where you want a paper trail of what each dollar paid for.
+  </Step>
+  <Step title="Save and approve">
+    Save the expense. It is immediately reflected in the fund's balance and available in reports.
+  </Step>
+</Steps>
+
+## How AI agents suggest fund allocation
+
+When expenses come in from your bank feed or via OCR scanning, AI agents suggest a fund allocation alongside the expense category. The suggestion is based on:
+
+- **Category-to-fund mapping** — expense categories you have previously assigned to specific funds (for example, Maintenance expenses often go to Building Fund)
+- **Payee history** — if prior expenses from the same vendor were assigned to a specific fund, the agent uses that preference
+- **Transaction description keywords** — phrases like "mission trip" or "youth retreat" in a bank description signal a specific fund
+
+You review the suggested fund in the approval queue along with the category. If the suggestion is correct, approve with one click. If not, update the fund before approving, and the agent stores your correction for next time.
+
+## Real-time fund balances
+
+Every approved expense immediately updates the balance of its assigned fund. You can see live fund balances on the **Funds** dashboard without running a report or waiting for a reconciliation.
+
+<Tip>
+  Pin your most active funds to the Altarflow dashboard so you can see their balances the moment you log in. When a board member calls asking about the Building Fund, you have the answer before the question is finished.
+</Tip>
+
+The Funds dashboard shows each fund's:
+
+- **Opening balance** — balance at the start of the current period
+- **Total donations received** — giving allocated to this fund
+- **Total expenses charged** — approved expenses assigned to this fund
+- **Current balance** — the live net position
+
+## How fund allocation flows into financial reports
+
+Fund allocation data drives the expense and financial analysis reports in Altarflow. When you generate a report, you can filter or group by fund to see:
+
+- **Per-fund spend** — total expenses charged to each fund over any date range
+- **Remaining budget** — if you have set a budget for a fund, reports show how much is left
+- **Expense detail by fund** — a line-by-line list of every expense assigned to the fund
+- **Income vs. expenses by fund** — compare donations received to expenses charged for each fund
+
+This makes board presentations straightforward. Instead of a single consolidated P&L, you can show each fund's own income and expense statement — which is exactly what donors to a specific campaign want to see.
+
+## Use cases for fund allocation
+
+<CardGroup cols={2}>
+  <Card title="Restricted Grants" icon="lock">
+    A foundation grants $10,000 for youth programming. Create a **Youth Grant** fund, record the deposit, and assign all qualifying expenses to it. At any point you can show exactly how the grant was spent.
+  </Card>
+  <Card title="Building Campaigns" icon="building">
+    Congregants give specifically to a new building. Every construction invoice, permit fee, and contractor payment is assigned to **Building Fund** so the balance reflects the campaign's true financial position.
+  </Card>
+  <Card title="Missions Support" icon="globe">
+    Track expenses for each mission trip or ongoing mission partnership separately. Compare planned budgets to actual spend per trip without needing separate spreadsheets.
+  </Card>
+  <Card title="General Operations" icon="gear">
+    Staff salaries, utilities, office supplies, and other day-to-day costs go to **General Fund**. Separating operational expenses from designated funds keeps your financial picture clean and accurate.
+  </Card>
+</CardGroup>
+
+## Managing your funds list
+
+You can create, rename, archive, and reorder funds in **Settings → Funds**. Best practices for fund management:
+
+- **Keep the list focused** — too many funds makes allocation decisions harder. Aim for funds that reflect real distinctions in how money was given or designated.
+- **Archive closed campaigns** — when a campaign ends, archive the fund so it no longer appears in the allocation dropdown. Historical data is preserved.
+- **Use a General Fund as the default** — configure General Fund as the default so expenses are automatically assigned there when no other fund is specified. This prevents unallocated expenses from accumulating.
+
+## Frequently asked questions
+
+<Accordion title="Can I reassign an expense to a different fund after approving it?">
+  Yes. Open the approved expense record, click **Edit**, change the **Fund** field, and save. The fund balances for both the original and the new fund update immediately. The change is logged for audit purposes.
+</Accordion>
+
+<Accordion title="Can an expense be split across multiple funds?">
+  Altarflow currently assigns each expense record to a single fund. If an expense genuinely needs to be split — for example, a shared utility bill between two programs — enter it as two separate expense records with amounts reflecting each fund's share.
+</Accordion>
+
+<Accordion title="How do I set a budget for a fund?">
+  Go to **Settings → Funds**, select the fund, and enter a budget amount and period. Once a budget is set, expense reports will show remaining budget alongside total spend, and Altarflow will alert you when spending approaches the budget threshold.
+</Accordion>
+
+<Accordion title="What happens to fund balances if I delete an expense?">
+  Deleting an approved expense reverses its effect on the fund balance immediately. The fund balance increases by the deleted expense amount and the expense is removed from all reports. Deleted expenses are logged in the audit trail.
+</Accordion>
